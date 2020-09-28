@@ -1,11 +1,13 @@
 import React from 'react';
 
 const LogIn = () => {
-  return (
-    <div>
+   return (
+    <div >
       Iniciar Sesion
     </div>
   );
 };
 
 export default LogIn;
+
+

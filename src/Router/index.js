@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LogIn from '../Components/LogIn'
 import SignIn from "../Components/SignIn";
 import ProfileUser from "../Components/ProfileUser";
-import {Header } from './styles'
+import { Header } from "./styles";
 
 export default function App() {
   return (

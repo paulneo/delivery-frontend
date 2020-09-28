@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import Panel from '../Utilities/Panel'
 
 const ProfileUser = () => {
   return (
     <div>
-      Perfil
+      <Panel title='holi'> </Panel>
     </div>
   );
 };
