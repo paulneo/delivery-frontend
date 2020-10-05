@@ -13,7 +13,7 @@ export default function App() {
           <div>
             <Link to="/">Home</Link>
             <Link to="/login">Log In</Link>
-            <Link to="/singin">Sign In</Link>
+            <Link to="/signin">Sign In</Link>
           </div>
         </Header>
 
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/login">
             <LogIn />
           </Route>
-          <Route path="/singin">
+          <Route path="/signin">
             <SignIn />
           </Route>
           <Route path="/">

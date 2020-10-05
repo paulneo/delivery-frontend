@@ -1,10 +1,19 @@
 import React from 'react';
+import { Login } from '../../Router/styles'
 
 const LogIn = () => {
    return (
-    <div >
-      Iniciar Sesion
-    </div>
+    <>
+
+      <Login>
+          <p>Iniciar Sesión</p>
+          <input type="text" placeholder="Usuario" />
+          <input type="password" placeholder="Contraseña" />
+          <button>Ingresar</button>
+          <p>¿No tienes una cuenta? <a href="#">Registrate aquí</a></p>
+      </Login>
+
+    </>
   );
 };
 
