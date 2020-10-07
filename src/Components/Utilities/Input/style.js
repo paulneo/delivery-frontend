@@ -8,6 +8,13 @@ export const InputStyle = styled.input`
   font-size: 16px;
   padding: 15px 17px;
   display: block;
-  color: #9b9999;
+  color: #606060;
   box-sizing: border-box;
+  &::placeholder {
+    color: #9b9999;
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #08c497;
+  }
 `;

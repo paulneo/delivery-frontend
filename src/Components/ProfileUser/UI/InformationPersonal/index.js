@@ -8,7 +8,7 @@ const InformationPersonal = () => {
       <div>
         <p>Información Personal</p>
         <div>
-          <Input type='text' placeholder='nombre'/>
+          <Input type='text' placeholder='Nombre'/>
         </div>
       </div>
       <div></div>
