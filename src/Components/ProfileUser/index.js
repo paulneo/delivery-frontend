@@ -4,7 +4,9 @@ import Panel from '../Utilities/Panel'
 const ProfileUser = () => {
   return (
     <div>
-      <Panel title='holi'> </Panel>
+      <Panel title='holi'> 
+
+      </Panel>
     </div>
   );
 };

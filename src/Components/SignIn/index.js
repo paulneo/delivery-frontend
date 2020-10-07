@@ -4,7 +4,6 @@ import { Login } from '../../Router/styles'
 const SigIn = () => {
   return (
     <>
-
       <Login>
           <p>Registrarse</p>
           <input type="text" placeholder="Usuario" />
@@ -12,7 +11,6 @@ const SigIn = () => {
           <button>Registrarse</button>
           <p>¿Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
       </Login>
-
     </>
   );
 };
