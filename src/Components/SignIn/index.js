@@ -1,15 +1,27 @@
 import React from 'react';
-import { Login } from '../../Router/styles'
+import { Login, Title, HaveAccount } from './styles'
+import Input from '../Utilities/Input'
+import Button from '../Utilities/Button'
 
 const SigIn = () => {
   return (
     <>
       <Login>
-          <p>Registrarse</p>
-          <input type="text" placeholder="Usuario" />
-          <input type="password" placeholder="Contraseña" />
-          <button>Registrarse</button>
-          <p>¿Ya tienes una cuenta? <a href="#">Iniciar Sesión</a></p>
+        <div>
+          <Title>Registrate</Title>
+        </div>
+        <div>
+          <Input placeholder="Usuario"></Input>
+        </div>
+        <div>
+          <Input type="password" placeholder="Contraseña"></Input>
+        </div>
+        <div>
+          <Button text="Registrarse"></Button>
+        </div>
+        <div>
+          <HaveAccount>¿Ya tienes una cuenta? <span><a href="#">Inicia Sesión</a></span></HaveAccount>
+        </div>
       </Login>
     </>
   );
