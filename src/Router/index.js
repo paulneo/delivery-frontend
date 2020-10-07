@@ -16,8 +16,7 @@ export default function App() {
             <Link to="/signin">Sign In</Link>
           </div>
         </Header>
-
-        {/* A <Switch> looks through its children <Route>s and
+        {/* A <Switch> looks through its children <Routes> and
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/login">
@@ -35,6 +34,3 @@ export default function App() {
   );
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
