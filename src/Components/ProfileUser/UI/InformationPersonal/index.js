@@ -1,11 +1,18 @@
 import React from 'react';
 import Panel from "../../../Utilities/Panel";
+import Input from '../../../Utilities/Input'
 
 const InformationPersonal = () => {
   return (
-    <div>
-      InformationPersonal
-    </div>
+    <Panel>
+      <div>
+        <p>Información Personal</p>
+        <div>
+          <Input type='text' placeholder='nombre'/>
+        </div>
+      </div>
+      <div></div>
+    </Panel>
   );
 };
 
