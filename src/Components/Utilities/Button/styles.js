@@ -9,4 +9,5 @@ export const Content = styled.div`
   border-radius: 30px;
   padding:13px 0;
   text-align:center;
+  cursor: pointer;
 `;

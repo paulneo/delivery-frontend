@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Login, Title, HaveAccount, InputForm, ButtonForm } from './styles'
 import Input from '../Utilities/Input'
 import Button from '../Utilities/Button'
+import { NavLink } from "react-router-dom";
 
 const SigIn = () => {
   return (
@@ -18,10 +19,17 @@ const SigIn = () => {
             <Input type="password" placeholder="Contraseña"></Input>
           </InputForm>
           <ButtonForm>
-            <Button text="Ingresar"></Button>
+            <NavLink to="/">
+              <Button text="Ingresar"></Button>
+            </NavLink>
           </ButtonForm>
           <div>
-            <HaveAccount>¿Ya tienes una cuenta? <span><a href="#">Iniciar Sesión</a></span></HaveAccount>
+            <HaveAccount>
+              ¿Ya tienes una cuenta?{" "}
+              <span>
+                <a href="#">Iniciar Sesión</a>
+              </span>
+            </HaveAccount>
           </div>
         </Login>
       </Box>
