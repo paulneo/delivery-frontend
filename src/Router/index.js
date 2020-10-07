@@ -1,21 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import LogIn from '../Components/LogIn'
 import SignIn from "../Components/SignIn";
 import ProfileUser from "../Components/ProfileUser";
-import { Header } from "./styles";
+import Restaurants from "../Components/Restaurants";
+import { Header, Icon, Profile, Links, Logo, Actions } from "./styles";
+import { faUser, faBell } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from "react";
 
-export default function App() {
+
+const Routes = () =>  {
+
+  const [ activeLinks, setActiveLink] = useState(false)
+  const [main, setMain] = useState(true);
+
+  useEffect(() => {
+    setMain(true)
+  },[])
+
   return (
     <Router>
       <div>
-        <Header>
-          <div>
-            <Link to="/">Home</Link>
-            <Link to="/login">Log In</Link>
-            <Link to="/signin">Sign In</Link>
-          </div>
-        </Header>
+        {main && (
+          <Header>
+            <Logo></Logo>
+            <Actions>
+              <Icon icon={faBell}></Icon>
+              <Profile>
+                <Icon
+                  icon={faUser}
+                  onClick={() => setActiveLink(!activeLinks)}
+                />
+              </Profile>
+            </Actions>
+            <Links active={activeLinks}>
+              <Link to="/profile" onClick={() => setActiveLink(false)}>
+                Perfil
+              </Link>
+              <Link to="/login" onClick={() => setMain(false)}>
+                Iniciar Sesión
+              </Link>
+              <Link to="/signin" onClick={() => setMain(false)}>
+                Registrarse
+              </Link>
+            </Links>
+          </Header>
+        )}
         {/* A <Switch> looks through its children <Routes> and
             renders the first one that matches the current URL. */}
         <Switch>
@@ -25,8 +55,11 @@ export default function App() {
           <Route path="/signin">
             <SignIn />
           </Route>
-          <Route path="/">
+          <Route path="/profile">
             <ProfileUser />
+          </Route>
+          <Route path="/">
+            <Restaurants></Restaurants>
           </Route>
         </Switch>
       </div>
@@ -34,3 +67,4 @@ export default function App() {
   );
 }
 
+export default Routes;
