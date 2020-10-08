@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Login, Title, HaveAccount, InputForm, ButtonForm } from './styles'
 import Input from '../Utilities/Input'
 import Button from '../Utilities/Button'
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SigIn = () => {
   return (
@@ -19,15 +19,15 @@ const SigIn = () => {
             <Input type="password" placeholder="Contraseña"></Input>
           </InputForm>
           <ButtonForm>
-            <NavLink to="/">
+            <Link to="/">
               <Button text="Ingresar"></Button>
-            </NavLink>
+            </Link>
           </ButtonForm>
           <div>
             <HaveAccount>
               ¿Ya tienes una cuenta?{" "}
               <span>
-                <a href="#">Iniciar Sesión</a>
+                <Link to="/login">Iniciar Sesión</Link>
               </span>
             </HaveAccount>
           </div>

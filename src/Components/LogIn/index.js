@@ -2,11 +2,11 @@ import React from 'react';
 import { Box, Login, Title, HaveAccount, InputForm, ButtonForm } from './styles'
 import Input from '../Utilities/Input'
 import Button from '../Utilities/Button'
+import {Link} from 'react-router-dom'
 
 const LogIn = () => {
-   return (
+  return (
     <>
-
       <Box>
         <Login>
           <div>
@@ -19,14 +19,20 @@ const LogIn = () => {
             <Input type="password" placeholder="Contraseña"></Input>
           </InputForm>
           <ButtonForm>
-            <Button text="Ingresar"></Button>
+            <Link to='/'>
+              <Button text="Ingresar"></Button>
+            </Link>
           </ButtonForm>
           <div>
-            <HaveAccount>¿No tienes una cuenta? <span><a href="#">Registrate aquí</a></span></HaveAccount>
+            <HaveAccount>
+              ¿No tienes una cuenta? {" "}
+              <span>
+                <Link to="signin">Registrate aquí</Link>
+              </span>
+            </HaveAccount>
           </div>
         </Login>
       </Box>
-
     </>
   );
 };

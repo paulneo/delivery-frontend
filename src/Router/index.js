@@ -58,8 +58,8 @@ const Routes = () =>  {
           <Route path="/profile">
             <ProfileUser />
           </Route>
-          <Route path="/">
-            <Restaurants></Restaurants>
+          <Route path="/restaurant">
+            <Restaurants />
           </Route>
         </Switch>
       </div>
