@@ -15,9 +15,9 @@ export const Actions = styled.div`
   justify-content: space-between;
 `;
 export const Icon = styled(FontAwesomeIcon)`
-  font-size:30px ;
-  color:#fff;
-  margin:0px 25px;
+  font-size: 30px;
+  color: #fff;
+  margin: 0px 25px;
   cursor: pointer;
 `;
 
