@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
-const Resturants = () => {
+const ListRestaurants = () => {
   return (
     <>
       <Box>
@@ -35,4 +35,4 @@ const Resturants = () => {
   );
 };
 
-export default Resturants;
+export default ListRestaurants;
