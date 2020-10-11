@@ -1,15 +1,15 @@
 import React from 'react';
-import Panel from "../../../Utilities/Panel";
-import { InputStyle, ContentInput, Icon } from "./styles";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import Panel from "../../../../Utilities/Panel";
+import { Select, ContentInput } from "./styles";
 import GoogleMapReact from 'google-map-react';
 
 const Ubication = () => {
   return (
     <Panel>
       <ContentInput>
-        <Icon icon={faSearch} />
-        <InputStyle type="text" placeholder="Buscar Ubicación" />
+        <Select>
+          <option value="">Villa Medica</option>
+        </Select>
       </ContentInput>
       <div style={{ height: "540px", width: "100%" }}>
         <GoogleMapReact

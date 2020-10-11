@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const Content = styled.div`
   padding:15px;
-  background: #FFFFFF;
-  box-shadow: 0px 2px 4px #E1E1E1;
+  border-radius: 10px;
+  background: #F5F5F5;
   border-radius: 10px;
   margin-bottom:15px;
 `

@@ -1,5 +1,5 @@
 import React from 'react';
-import Panel from '../Utilities/Panel'
+import Panel from '../../Utilities/Panel'
 import CoverPage from './UI/CoverPage'
 import Filter from './UI/Filter'
 import ListCards from './UI/ListCards'
@@ -10,9 +10,9 @@ const Restaurant = () => {
   return (
     <Panel padding={false}>
       <CoverPage></CoverPage>
-      <Grid fluid>
+      <Grid fluid style={{paddingBottom:'20px'}}>
         <Row>
-          <Col  xs={12} sm={8} md={8} lg={8}>
+          <Col xs={12} sm={8} md={8} lg={8}>
             <Filter />
             <ListCards/>
           </Col>

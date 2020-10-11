@@ -10,7 +10,8 @@ import LogIn from '../Components/LogIn'
 import SignIn from "../Components/SignIn";
 import ProfileUser from "../Components/ProfileUser";
 import ListRestaurants from "../Components/ListRestaurants";
-import Restaurant from '../Components/Restaurant'
+import Delivery from '../Components/Delivery'
+import ShowDelivery from '../Components/ShowDelivery'
 import { Header, Icon, Profile, Links, Logo, Actions,Margin } from "./styles";
 import { faUser, faBell } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
@@ -54,14 +55,19 @@ const Routes = () =>  {
                 <ProfileUser />
               </Margin>
             </Route>
-            <Route path="/listRestaurants">
+            <Route path="/restaurants">
               <Margin>
                 <ListRestaurants />
               </Margin>
             </Route>
-            <Route path="/restaurant">
+            <Route path="/delivery">
               <Margin>
-                <Restaurant />
+                <Delivery />
+              </Margin>
+            </Route>
+            <Route path="/showDelivery">
+              <Margin>
+                <ShowDelivery />
               </Margin>
             </Route>
           </Switch>

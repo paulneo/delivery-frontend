@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import img from '../../../../Images/portada.jpg'
+import img from '../../../../../Images/portada.jpg'
 
 export  const Content  = styled.div`
   height: 122px;

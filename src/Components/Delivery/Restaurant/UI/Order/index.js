@@ -1,7 +1,7 @@
 import React from 'react';
 import CardSelected from '../CardSelected'
-import Panel from '../../../Utilities/Panel'
-import Button from '../../../Utilities/Button'
+import Panel from '../../../../Utilities/Panel'
+import Button from '../../../../Utilities/Button'
 
 import {Title,Footer,Total,Text,Body}  from './styles'
 const Order = () => {
