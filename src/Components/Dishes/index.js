@@ -18,7 +18,7 @@ const Dishes = () => {
           </Col>
         </Row>
       </Grid>
-      <ModalCreate></ModalCreate>
+      {/* <ModalCreate></ModalCreate> */}
     </Panel>
   );
 };

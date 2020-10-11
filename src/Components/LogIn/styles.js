@@ -15,7 +15,7 @@ export const Login = styled.div`
     border: 1px solid #DDDDDD;
     border-radius: 10px;
     width: 418px;
-    height: 432px;
+    // height: 432px;
     text-align: center;
     padding: 42px;
     box-shadow: 0px 2px 4px #c9c9c9;
@@ -34,10 +34,13 @@ export const InputForm = styled.div`
 
 export const ButtonForm = styled.div`
     margin-top: 75px;
+    & a {
+        text-decoration: none;
+    }
 `;
 
 export const HaveAccount = styled.p`
-    margin-top: 30px;
+    margin: 30px 0 0 0;
     font-size: 16px;
     & a {
         color: #EA3546;

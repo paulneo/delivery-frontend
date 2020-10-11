@@ -20,7 +20,7 @@ const SigIn = () => {
           </InputForm>
           <ButtonForm>
             <Link to="/">
-              <Button text="Ingresar"></Button>
+              <Button text="Registrarse"></Button>
             </Link>
           </ButtonForm>
           <div>

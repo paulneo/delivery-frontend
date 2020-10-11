@@ -1,37 +1,24 @@
 import React from 'react';
-import { Search, Restaurant, Title, ButtonRes, SearchRes, Box, ChangeRes, InputRes } from './styles'
-import Input from '../Utilities/Input'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import Panel from '../Utilities/Panel'
+import Filter from './UI/Filter'
+import ListCards from './UI/ListCards'
+import Title from './UI/Title'
+import { Grid, Row, Col } from "react-flexbox-grid";
 
 
 const ListRestaurants = () => {
   return (
-    <>
-      <Box>
-        <Restaurant>
-          <div>
-            <Title>Restaurantes</Title>
-          </div>
-          <SearchRes>
-            <ButtonRes>
-              <ChangeRes>
-                <p>Pollerias</p>
-              </ChangeRes>
-              <ChangeRes>
-                <p>Pizzerias</p>
-              </ChangeRes>
-            </ButtonRes>
-            <InputRes>
-              <Input type="text" placeholder="Buscar" />
-              <Search>
-                <FontAwesomeIcon icon={faSearch} />
-              </Search>
-            </InputRes>
-          </SearchRes>
-        </Restaurant>
-      </Box>
-    </>  
+    <Panel padding={false}>
+      <Title></Title>
+      <Grid fluid style={{paddingBottom:'20px'}}>
+        <Row>
+          <Col xs={12} sm={12} md={12} lg={12}>
+            <Filter />
+            <ListCards/>
+          </Col>
+        </Row>
+      </Grid>
+    </Panel>
   );
 };
 
