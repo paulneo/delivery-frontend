@@ -13,6 +13,7 @@ import ListRestaurants from "../Components/ListRestaurants";
 import Delivery from '../Components/Delivery'
 import ShowDelivery from '../Components/ShowDelivery'
 import MyDeliveries from '../Components/MyDeliveries'
+import Dishes from '../Components/Dishes'
 import { Header, Icon, Profile, Links, Logo, Actions,Margin } from "./styles";
 import { faUser, faBell } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
@@ -74,6 +75,11 @@ const Routes = () =>  {
             <Route path="/myDeliveries">
               <Margin>
                 <MyDeliveries />
+              </Margin>
+            </Route>
+            <Route path="/dishes">
+              <Margin>
+                <Dishes />
               </Margin>
             </Route>
           </Switch>
