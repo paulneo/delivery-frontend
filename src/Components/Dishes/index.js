@@ -3,7 +3,7 @@ import Panel from '../Utilities/Panel'
 import CoverPage from './UI/CoverPage'
 import Filter from './UI/Filter'
 import ListCards from './UI/ListCards'
-import Order from './UI/Order'
+import ModalCreate from './UI/ModalCreate'
 import { Grid, Row, Col } from "react-flexbox-grid";
 
 const Dishes = () => {
@@ -18,6 +18,7 @@ const Dishes = () => {
           </Col>
         </Row>
       </Grid>
+      <ModalCreate></ModalCreate>
     </Panel>
   );
 };
