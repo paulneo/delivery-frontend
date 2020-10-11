@@ -46,3 +46,6 @@ export const Links = styled.div`
 export const Logo = styled.div`
   width:100px;
 `
+export const Margin = styled.div`
+  margin:50px;
+`

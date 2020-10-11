@@ -10,7 +10,8 @@ import LogIn from '../Components/LogIn'
 import SignIn from "../Components/SignIn";
 import ProfileUser from "../Components/ProfileUser";
 import ListRestaurants from "../Components/ListRestaurants";
-import { Header, Icon, Profile, Links, Logo, Actions } from "./styles";
+import Restaurant from '../Components/Restaurant'
+import { Header, Icon, Profile, Links, Logo, Actions,Margin } from "./styles";
 import { faUser, faBell } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 
@@ -41,20 +42,29 @@ const Routes = () =>  {
         {/* A <Switch> looks through its children <Routes> and
             renders the first one that matches the current URL. */}
         {/* <Redirect to="/restaurant" />  */}
-        <Switch>
-          <Route path="/login">
-            <LogIn />
-          </Route>
-          <Route path="/signin">
-            <SignIn />
-          </Route>
-          <Route path="/profile">
-            <ProfileUser />
-          </Route>
-          <Route path="/listRestaurants">
-            <ListRestaurants />
-          </Route>
-        </Switch>
+          <Switch>
+            <Route path="/login">
+              <LogIn />
+            </Route>
+            <Route path="/signin">
+              <SignIn />
+            </Route>
+            <Route path="/profile">
+              <Margin>
+                <ProfileUser />
+              </Margin>
+            </Route>
+            <Route path="/listRestaurants">
+              <Margin>
+                <ListRestaurants />
+              </Margin>
+            </Route>
+            <Route path="/restaurant">
+              <Margin>
+                <Restaurant />
+              </Margin>
+            </Route>
+          </Switch>
       </div>
     </Router>
   );
