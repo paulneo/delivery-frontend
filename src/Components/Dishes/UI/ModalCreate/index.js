@@ -1,7 +1,7 @@
 import React from 'react';
 import Modal from '../../../Utilities/Modal'
 import Input from '../../../Utilities/Input'
-import { Title, Form, AddMore, Actions } from "./styles";
+import { Title, Form, AddMore, Actions, FormPorcion } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 
@@ -21,10 +21,12 @@ const ModalCreate = () => {
             <FontAwesomeIcon icon={faPlus} />
           </AddMore>
         </Actions>
-        <Form style={{display:"flex"}}>
-          <Input type="text" placeholder="Nombre" />
-          <Input type="text" placeholder="Precio" />
-        </Form>
+        <FormPorcion>
+          <Form>
+            <Input type="text" placeholder="Nombre" />
+            <Input type="text" placeholder="Precio" />
+          </Form>
+        </FormPorcion>
       </div>
     </Modal>
   );

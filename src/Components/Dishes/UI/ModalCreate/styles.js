@@ -9,9 +9,6 @@ export const Title = styled.p`
 export const Form = styled.div`
   margin-bottom: 40px;
   margin: 20px;
-  & input {
-      margin: 5px;
-  }
 `;
 export const Actions = styled.div`
   display: flex;
@@ -29,4 +26,13 @@ export const AddMore = styled.div`
   justify-content:center;
   color: white;
   font-size:16px;
+`;
+
+export const FormPorcion = styled.div`
+    margin-bottom: 90px;
+    & div {
+        display: flex;
+    } & input {
+        margin: 0 10px;
+    }
 `;
